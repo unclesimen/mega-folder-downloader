@@ -1,8 +1,16 @@
-# MegaFolderDownloader
+# MegaFolderDownloader — MEGA 文件夹高速下载器
 
-下载 MEGA 公开文件夹的 Windows 小工具：粘贴文件夹链接，即可把整个文件夹按原目录结构下载到本地。支持多连接并行 + 大文件分段并行来绕开 MEGA 的单连接限速，支持字节级断点续传，自动适配系统代理，遇到 MEGA 限流（HTTP 509）会自动暂停并在配额恢复后继续。
+**免账号 · 免安装 · 多连接绕限速 · 字节级断点续传 · 自动代理 · 509 限流自愈**
+**No account · No install · Beats per-connection throttling · Byte-level resume · Auto proxy · Self-heals on HTTP 509**
 
-A small Windows tool for downloading public MEGA folders. Paste a folder link and the whole folder is downloaded with its original directory structure. It works around MEGA's per-connection throttling with parallel connections and segmented downloads, resumes at byte level, picks up your system proxy automatically, and waits out MEGA bandwidth limits (HTTP 509) on its own.
+[![Release](https://img.shields.io/github/v/release/unclesimen/mega-folder-downloader)](https://github.com/unclesimen/mega-folder-downloader/releases)
+[![Downloads](https://img.shields.io/github/downloads/unclesimen/mega-folder-downloader/total)](https://github.com/unclesimen/mega-folder-downloader/releases)
+![Platform](https://img.shields.io/badge/platform-Windows%20x86--64-blue)
+![Go](https://img.shields.io/badge/Go-1.23%2B-00ADD8)
+
+一个专为 Windows 打造的 MEGA 公开文件夹下载工具。把文件夹链接粘贴进来，整个文件夹就会按原目录结构下载到本地。它针对 MEGA 的限速机制做了三件事：多文件并行 + 大文件分段并行，把速度叠满；字节级断点续传，中断零损失；遇到 509 配额限流时自动暂停、恢复后自动续传。再大的文件夹，也能挂着安心下完。
+
+A Windows tool built for downloading public MEGA folders. Paste a folder link, and the entire folder lands on your disk with its original directory structure. It is designed around MEGA's throttling: parallel files plus segmented large files stack up the speed, byte-level resume makes interruptions cost nothing, and when the transfer quota runs out (HTTP 509) it pauses and continues on its own once the quota refills. Even huge folders finish while you do something else.
 
 ---
 

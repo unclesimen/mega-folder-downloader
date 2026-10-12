@@ -1,0 +1,6 @@
+*.exe
+megadl*
+downloads/
+*.part
+*.seg*
+*.assembled

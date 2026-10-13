@@ -117,3 +117,7 @@ go build -o megadl .
   Public folder links only (the ones with a `#` key); no MEGA account needed.
 - 请只下载你有权获取的内容。
   Please only download content you are entitled to access.
+
+
+## 致谢与友链
+- 本项目首发/推荐至 [LINUX DO](https://linux.do/)
